@@ -47,3 +47,17 @@ if current_size > max_limit:
     print("PASS: Storage limit exceeded")
 else:
     print("FAIL: Storage limit not exceeded")
+
+
+
+# Test F - Unauthorized User
+
+authorized_user = "auditmanager"
+current_user = "student"
+
+if current_user != authorized_user:
+    print("PASS: Unauthorized user detected")
+else:
+    print("FAIL: Unauthorized user accepted")
+
+
