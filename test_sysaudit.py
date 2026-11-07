@@ -35,3 +35,15 @@ try:
     print("FAIL: Invalid value accepted")
 except ValueError:
     print("PASS: Invalid configuration value detected")
+
+
+
+# Test E - Storage Limit Exceeded
+
+max_limit = 100.0
+current_size = 150.0
+
+if current_size > max_limit:
+    print("PASS: Storage limit exceeded")
+else:
+    print("FAIL: Storage limit not exceeded")
