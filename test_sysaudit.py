@@ -23,3 +23,15 @@ if not os.path.isdir(audit_dir):
 else:
     print("FAIL: Directory exists")# Test C - Invalid Path
 
+
+
+
+# Test D - Malformed Configuration
+
+config_value = "invalid"
+
+try:
+    max_limit = float(config_value)
+    print("FAIL: Invalid value accepted")
+except ValueError:
+    print("PASS: Invalid configuration value detected")
